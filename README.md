@@ -18,5 +18,5 @@ The `sfdx-project.json` file contains useful configuration information for your 
 - [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
 
 ## Installazione Package
-Utilizza questo link x installare nella tua org
-packaging/installPackage.apexp?p0=04t4W000002nizdQAA
+Utilizza questo link x installare nella tua org 
+- packaging/installPackage.apexp?p0=04tTk00000005kTIAQ
