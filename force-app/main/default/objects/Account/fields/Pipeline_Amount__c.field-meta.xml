@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pipeline_Amount__c</fullName>
+    <inlineHelpText>totale amount opportunity</inlineHelpText>
+    <label>Pipeline Amount</label>
+    <summarizedField>Opportunity.ExpectedRevenue</summarizedField>
+    <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,112 @@
+<!--
+  @description       : 
+  @author            : maurizio.colombo@lynxspa.com
+  @group             : 
+  @last modified on  : 05-12-2024
+  @last modified by  : maurizio.colombo@lynxspa.com
+-->
+<template>
+  <article class="slds-card">
+    <template if:true={stringTitle}>
+    <div class="slds-card__header slds-grid">
+      <header class="slds-media slds-media_center slds-has-flexi-truncate">
+        <div class="slds-media__figure">
+        <template if:true={stringIconName}>
+          <lightning-icon
+            class="card-icon slds-icon_container"
+            icon-name={stringIconName}
+            size="small"
+          >
+          </lightning-icon>
+        </template>
+        </div>
+        
+        <div class="slds-media__body">
+          <h2 class="slds-card__header-title">
+            <span class="slds-card__header-link slds-truncate">
+              {stringTitle}
+            </span>
+          </h2>
+        </div>
+        
+      </header>
+    </div>
+    </template>
+    <lightning-layout>
+
+      <template if:true={stringMetricStatus1}>
+      <lightning-layout-item size={columnSize} padding="around-small">
+        <div class="slds-box slds-text-align_center">
+            <template if:true={stringMetric1IconName}>
+                <lightning-icon
+                class="slds-icon_container slds-icon_container_circle slds-m-around_x-small"
+                icon-name={stringMetric1IconName}
+                size="medium"
+              >
+              </lightning-icon>
+            </template>
+          <p class="metric">{stringMetric1}</p>
+          <p class={colorClassValue1}>{stringValue1}</p>
+        </div>
+      </lightning-layout-item>
+    </template>
+
+    <template if:true={stringMetricStatus2}>
+      <lightning-layout-item size={columnSize} padding="around-small">
+        <div class="slds-box slds-text-align_center">
+            <template if:true={stringMetric2IconName}>
+                <lightning-icon
+                class="slds-icon_container slds-icon_container_circle slds-m-around_x-small"
+                icon-name={stringMetric2IconName}
+                size="medium"
+              >
+              </lightning-icon>
+            </template>
+          <p class="metric">{stringMetric2}</p>
+          <p class={colorClassValue2}>{stringValue2}</p>
+        </div>
+      </lightning-layout-item>
+    </template>
+
+    <template if:true={stringMetricStatus3}>
+      <lightning-layout-item size={columnSize} padding="around-small">
+        <div class="slds-box slds-text-align_center">
+            <template if:true={stringMetric3IconName}>
+                <lightning-icon
+                class="slds-icon_container slds-icon_container_circle slds-m-around_x-small"
+                icon-name={stringMetric3IconName}
+                size="medium"
+              >
+              </lightning-icon>
+            </template>
+          <p class="metric">{stringMetric3}</p>
+          <p class={colorClassValue3}>{stringValue3}</p>
+        </div>
+      </lightning-layout-item>
+    </template>
+
+    <template if:true={stringMetricStatus4}>
+      <lightning-layout-item size={columnSize} padding="around-small">
+        <div class="slds-box slds-text-align_center">
+            <template if:true={stringMetric4IconName}>
+                <lightning-icon
+                class="slds-icon_container slds-icon_container_circle slds-m-around_x-small"
+                icon-name={stringMetric4IconName}
+                size="medium"
+              >
+              </lightning-icon>
+            </template>
+          <p class="metric">{stringMetric4}</p>
+          <p class={colorClassValue4}>
+            <lightning-formatted-date-time value={stringValue4}></lightning-formatted-date-time>
+          </p>
+        </div>
+      </lightning-layout-item>
+    </template>
+
+    </lightning-layout>
+    <footer class="slds-card__footer link">
+      {stringFooter}
+    </footer>
+  </article>
+</template>

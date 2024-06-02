@@ -2,11 +2,19 @@
   "packageDirectories": [
     {
       "path": "force-app",
-      "default": true
+      "package": "QuickInsights",
+      "versionName": "ver 0.1",
+      "versionNumber": "0.1.0.NEXT",
+      "default": true,
+      "versionDescription": ""
     }
   ],
   "name": "dx-empty",
   "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "59.0"
+  "sourceApiVersion": "59.0",
+  "packageAliases": {
+    "QuickInsights": "0HoTk000000001dKAA",
+    "QuickInsights@0.1.0-1": "04tTk00000005kTIAQ"
+  }
 }
